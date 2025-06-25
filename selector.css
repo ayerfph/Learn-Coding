@@ -1,0 +1,19 @@
+/* Learn Selectors */
+
+/*to target all <p> elements and set their text color to red, you can use the following CSS rule*/
+p {
+  color: red;
+}
+
+h1, h2, p {
+  color: red;
+}
+
+/*to style all elements with the class, you can do the following*/
+
+.button {
+  background-color: blue;
+  color: white;
+}
+
+/*ID selectors target a single HTML element with a unique ID attribute. They are denoted by a hash symbol (#) followed by the ID name*/
