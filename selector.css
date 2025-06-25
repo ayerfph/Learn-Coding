@@ -17,3 +17,56 @@ h1, h2, p {
 }
 
 /*ID selectors target a single HTML element with a unique ID attribute. They are denoted by a hash symbol (#) followed by the ID name*/
+
+#header {
+  font-size: 24px;
+  color: green;
+}
+
+/*
+Attribute selectors allow you to target elements based on their attributes
+
+example:
+<span data-highlight>123</span> and <span data-highlight>456</span>
+*/
+
+[data-highlight] {
+  background-color: yellow;
+}
+
+/*
+Extract Match Selector
+This selector targets elements with an attribute that exactly matches a value
+
+*/
+
+[data-highlight="true"] {
+  background-color: yellow;
+}
+
+/*
+Substring Match Selector
+This selector targets elements with an attribute containing a specified value.
+*/
+
+[class*="button"] {
+  border: 1px solid black;
+}
+
+/*
+Prefix Match Selector
+This selector targets elements with an attribute starting with a value.
+*/
+
+[href^="https://"] {
+  color: blue;
+}
+
+/*
+Suffix Match Selector
+This selector targets elements with an attribute ending with a value.
+*/
+
+[src$=".png"] {
+  border: 1px solid black;
+}
